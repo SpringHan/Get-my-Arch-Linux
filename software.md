@@ -43,7 +43,7 @@
 
 ### `htop`
 
-- 终端下系统资源占用查看工具。
+- 系统硬件信息查看。
 
 - ```bash
   $ sudo pacman -S htop
@@ -102,7 +102,6 @@
 - ```bash
   $ sudo pacman -S tree
   ```
->>>>>>> new:software.md
 
 ## 输入法
 
