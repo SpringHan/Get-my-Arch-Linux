@@ -1,31 +1,6 @@
 # 美化
 ## 窗口管理器
 
-使用窗口管理器需要X服务的支持，[Xorg安装方法](initial-configuration.md#6-安装xorg)
-
-### `Xorg使用方法`
-
-- 找到`/etc/X11/xinit/xinitrc`文件，使用编辑器在文件末尾进行以下操作：
-
-  ```
-  exec dwm #如果你并不打算使用dwm作为你的窗口管理器，就将其改为你所使用的窗口管理器的启动命令
-
-  twm &
-  xclock -geometry 50x50-1+1 &
-  xterm -geometry 80x50+494+51 &
-  xterm -geometry 80x20+494-0 &
-  exec xterm -geometry 80x66+0+0 -name login
-  #找到以上这几行，在它们开头插入#以此注释掉
-  ```
-
-- 在进行了以上操作后，在tty下运行`startx`命令开启X服务，随后即可进入窗口管理器，如果你觉得每次登录后再运行startx开启很麻烦，想让其自启，[请看这里](prettification-trouble-shooting.md#Xorg服务自启)
-
-- 如果你觉得每次修改`xinitrc`文件要到`etc`目录下很麻烦，可以创建软链接到你的用户目录：
-
-  ```bash
-  $ sudo -E ln -sf /etc/X11/xinit/xinitrc ~/.xinitrc
-  ```
-
 ### `i3`
 
 - 介绍：
