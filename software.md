@@ -35,7 +35,7 @@
 
 ### `neofetch`
 
-- 终端下查看系统硬件信息工具。
+- 系统硬件信息查看。
 
 - ```bash
   $ sudo pacman -S neofetch
@@ -43,7 +43,7 @@
 
 ### `htop`
 
-- 系统硬件信息查看。
+- 终端下系统资源占用查看工具。
 
 - ```bash
   $ sudo pacman -S htop
